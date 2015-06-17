@@ -6,7 +6,7 @@ Description: For markdown beginner, able to check Markdown Cheatsheet in wordpre
 Version: 0.1.1
 Author: recodele( Shohei Komori )
 Author URI: http://www.recodele.net
-License: GPL2
+License: GPL2  
 */
 
 
