@@ -2,18 +2,18 @@
 /*
 Plugin Name: Markdown_Cheatsheet
 Plugin URI: http://www.recodele.net
-Description: For markdown beginner, able to check Markdown Cheatsheet in wordpress edit.php.
+Description: For markdown beginner, able to check Markdown Cheatsheet in edit.php.
 Version: 0.1.1
 Author: recodele( Shohei Komori )
 Author URI: http://www.recodele.net
-License: GPL2  
+License: GPL2
 */
 
 
 	add_action('admin_menu', 'markdown_cheatsheet_plugin_menu');
 	
 	function markdown_cheatsheet_plugin_menu() {
-	  add_options_page('Markdown Cheatsheet Plugin Options', 'Markdown Cheatsheet', 8, __FILE__, 'markdown_cheatsheet_options_page');
+	 // add_options_page('Markdown Cheatsheet Plugin Options', 'Markdown Cheatsheet', 8, __FILE__, 'markdown_cheatsheet_options_page');
 	}
 
 	function markdown_cheatsheet_meta_box_inside() {
@@ -34,7 +34,7 @@ License: GPL2
 		$tag .= $tb . "\t" . '<div class="part">' . "\n";
 		$tag .= $tb . "\t\t" . '<h4>Text</h4>' . "\n";
 		$tag .= $tb . "\t\t" . '<ul>' . "\n";
-		$tag .= $tb . "\t\t\t" . '<li>line break = 2 spaces</li>' . "\n";
+		$tag .= $tb . "\t\t\t" . '<li>line break( br ) = 2 spaces</li>' . "\n";
 		$tag .= $tb . "\t\t\t" . '<li>paragraphs = one or more consecutive lines</li>' . "\n";
 		$tag .= $tb . "\t\t\t" . '<li>Horizontal line = 3 or more *** / --- / ___</li>' . "\n";
 		$tag .= $tb . "\t\t\t" . '<li>*emphasis*</li>' . "\n";
